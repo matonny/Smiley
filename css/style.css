@@ -1,0 +1,15 @@
+.minibar {
+  background-color: #1976d2; }
+
+.minibar__categories {
+  display: flex; }
+
+.minibar__contact {
+  display: flex;
+  list-style-type: none; }
+
+.minibar__socials {
+  display: flex;
+  list-style-type: none; }
+
+/*# sourceMappingURL=style.css.map */
