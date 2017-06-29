@@ -1,6 +1,6 @@
 @import '~normalize-scss/sass/normalize';
-@import 'variables.scss'
-
+@import '_variables';
+@include normalize();
 .minibar{
 	background-color:$darkerblue;
 }
