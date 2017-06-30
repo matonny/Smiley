@@ -27,7 +27,7 @@ body{
 .header__open-menu {
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 15px;
     height: 32px;
     width: 32px;
     background: url("../images/nav-icon.png") transparent;
@@ -58,6 +58,7 @@ body{
     color: white;
     font-size: 22px;
     display: block;
+    margin:0;
 }
 .header__list{
     display: flex;
@@ -76,12 +77,44 @@ body{
     transition: color 0.3s;
     display: inline-block;
     padding: 5px 0;
-}
-.header__list__item:hover{
-
+	&:hover{
 	.header__list__link{
 		color:$reddish;	
 	}
+}
+}
+.home{
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/background.jpg');
+	background-size: cover;
+}
+.home__content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.home__title{
+	margin:0;
+	font-weight: 700;
+	font-size:56px;
+	text-align: center;
+	text-transform: uppercase;
+	color:white;
+}
+.home__title__blue{
+	color:$brighter-blue;
+}
+.home__description{
+	font-size: 20px;
+	line-height: 60px;
+	color:white;
+	text-align: center;
+}
+.home__link{
+	width:200px;
+	height:60px;
+	background-color: $brighter-blue;
+	@include border-radius(2px);
 }
 @media screen and (min-width: 700px) {
 	.minibar{
@@ -93,7 +126,7 @@ body{
 	.minibar__categories{
 		margin:0 auto;
 		display: flex;
-		max-width: 1000px;
+		max-width: 1200px;
 		justify-content: space-between;
 	}
 	.minibar__contact__item{
@@ -108,19 +141,20 @@ body{
 		margin:0 3px;
 	}	
 	.minibar__socials__item{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin:0 5px;
-		width:20px;
-		height:20px;
-		@include border-radius(50%);		
-	}
-	.minibar__socials__item:hover{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:0 5px;
+	width:20px;
+	height:20px;
+	border-radius: 50%;
+
+	&:hover{
 		background: white;
 		.minibar__socials__icon{
 			background: rgba(0,0,0, 0.0);
 			fill:$reddish;
+			}
 		}
 	}
 	.minibar__socials__icon{
@@ -139,7 +173,7 @@ body{
     	align-items: center;
     	justify-content: space-between;
     	display: flex;
-    	max-width: 1000px;
+    	max-width: 1200px;
     	width:100%;
         flex-direction: row;
         padding: 0 20px;
@@ -150,10 +184,11 @@ body{
     }
     .header__list {
         flex-direction: row;
+        margin:0;
     }
     .header__list__item{
     	margin:0 10px;
-    	padding:30px 0;
+    	padding:15px 0;
     	transition: 0.2s;
     	@include border-bottom(2px, solid, rgba(0,0,0, 0.0)); 
     }

@@ -426,7 +426,7 @@ body {
 .header__open-menu {
   position: absolute;
   right: 20px;
-  top: 10px;
+  top: 15px;
   height: 32px;
   width: 32px;
   background: url("../images/nav-icon.png") transparent;
@@ -455,7 +455,8 @@ body {
   font-weight: 400;
   color: white;
   font-size: 22px;
-  display: block; }
+  display: block;
+  margin: 0; }
 
 .header__list {
   display: flex;
@@ -474,9 +475,44 @@ body {
   transition: color 0.3s;
   display: inline-block;
   padding: 5px 0; }
+  .header__list__link:hover .header__list__link {
+    color: #ef5350; }
 
-.header__list__item:hover .header__list__link {
-  color: #ef5350; }
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
+  background-size: cover; }
+
+.home__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.home__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white; }
+
+.home__title__blue {
+  color: #03a9f4; }
+
+.home__description {
+  font-size: 20px;
+  line-height: 60px;
+  color: white;
+  text-align: center; }
+
+.home__link {
+  width: 200px;
+  height: 60px;
+  background-color: #03a9f4;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px; }
 
 @media screen and (min-width: 700px) {
   .minibar {
@@ -488,7 +524,7 @@ body {
   .minibar__categories {
     margin: 0 auto;
     display: flex;
-    max-width: 1000px;
+    max-width: 1200px;
     justify-content: space-between; }
 
   .minibar__contact__item {
@@ -509,16 +545,12 @@ body {
     margin: 0 5px;
     width: 20px;
     height: 20px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
     border-radius: 50%; }
-
-  .minibar__socials__item:hover {
-    background: white; }
-    .minibar__socials__item:hover .minibar__socials__icon {
-      background: transparent;
-      fill: #ef5350; }
+    .minibar__socials__item:hover {
+      background: white; }
+      .minibar__socials__item:hover .minibar__socials__icon {
+        background: transparent;
+        fill: #ef5350; }
 
   .minibar__socials__icon {
     width: 20px;
@@ -535,7 +567,7 @@ body {
     align-items: center;
     justify-content: space-between;
     display: flex;
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
     flex-direction: row;
     padding: 0 20px; }
@@ -545,11 +577,12 @@ body {
     max-width: 300px; }
 
   .header__list {
-    flex-direction: row; }
+    flex-direction: row;
+    margin: 0; }
 
   .header__list__item {
     margin: 0 10px;
-    padding: 30px 0;
+    padding: 15px 0;
     transition: 0.2s;
     -webkit-border-bottom: 2px solid transparent;
     -moz-border-bottom: 2px solid transparent;
