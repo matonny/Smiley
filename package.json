@@ -4,7 +4,12 @@
   "description": "Smiley website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-task:scss-compile": "node-sass --importer=node_modules/node-sass-tilde-importer --include-path scss --include-path node_modules --source-map true scss -o css",
+    "build-task:autoprefixer": "postcss css/*.css --use autoprefixer -d css",
+    "build-task:cssnano": "postcss css/*.css --use cssnano -d css",
+    "sass:build": "npm-run-all build-task:*",
+    "sass:watch": "chokidar 'scss/**/*.scss' -c 'npm run sass:build'",
+    "dev": "npm-run-all -p sass:*"
   },
   "author": "matonny",
   "license": "ISC",
@@ -14,7 +19,9 @@
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "chokidar-cli": "^1.2.0",
+    "cssnano": "^3.10.0",
     "node-sass": "^4.5.3",
+    "node-sass-tilde-importer": "^1.0.0",
     "npm-run-all": "^4.0.2",
     "postcss-cli": "^4.1.0"
   }
