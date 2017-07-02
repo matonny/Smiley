@@ -181,7 +181,7 @@ body{
 	flex-wrap: wrap;
 	justify-content: center;
 	padding:0;
-	max-width: 1400px;
+	max-width: 1500px;
 	width:100%;
 	list-style-type: none;
 	margin:100px 0;
@@ -189,21 +189,24 @@ body{
 .about__item{
 	max-width: 320px;
 	width:100%;
-	margin:0 60px;
+	margin:0 60px 0 100px;
 	position: relative;
-}
-.about__item__title{
-	text-transform: uppercase;	
-	color:$font-color;
-}
-.about__item::before{
+
+&:before{
 	position: absolute;
 	content:'';
 	width:40px;
 	height: 40px;
 	left:-50px;
 	top:15px;
+	}
+
 }
+.about__item__title{
+	text-transform: uppercase;	
+	color:$font-color;
+}
+
 .writing::before{
 	background-image: url('../images/writing.png');
 }
@@ -242,6 +245,62 @@ body{
 }
 .mouse__link{
 	margin:100px;
+}
+.js-tabcontent[aria-hidden=true] { display: none; }
+
+.portfolio__content{
+	padding-top:100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin:10px;
+}
+.portfolio__title{
+	text-transform: uppercase;
+	color:$font-color;
+	margin:0;
+	padding:0;
+}
+.portfolio__description{
+	color:$font-color2;
+	font-size: 16px;
+	position: relative;
+	padding:15px;
+	text-align: center;
+	&::before{
+		position:absolute;
+		content:'';
+		left:45%;
+		width:10%;
+		top:100%;
+		height: 3px;
+		background-color: $brighter-blue;
+	}
+}
+.portfolio__list{
+	display: flex;
+	list-style-type: none;
+	padding:0;
+	text-align: center;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.portfolio__list__item{
+	display: block;
+	padding:10px;
+	color:$font-color;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	font-weight: bold;
+	border-radius: 3px;
+	transition: 0.2s;
+	&:hover{
+		background-color:$brighter-blue;
+		color:white;
+		box-shadow: 0 2px 5px 2px;
+	}
 }
 @media screen and (min-width: 825px) {
 	.minibar{
@@ -369,4 +428,14 @@ body{
     	height:500px;
     	background-size: cover;
     }
+    .about__item{
+    	margin:0 60px;
+    }
+    .portfolio__list{
+	flex-direction: row;
+	list-style-type: none;
+	}
+	.portfolio__list__item{
+		margin:0 10px;
+	}
 }
