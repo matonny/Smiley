@@ -6,6 +6,7 @@
     <title>Smiley</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link href='css/style.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <style>
     @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
@@ -69,7 +70,7 @@
         <div class='header__container'>
             <h1 class='header__logo'>
                     <a href='#home' class='logo__link'>
-                    	<img class='header__logo__photo' src='images/logo.png'>
+                        <img class='header__logo__photo' src='images/logo.png'>
                     </a>
                 </h1>
             <button class='header__open-menu js-open-menu' type='button' id='open-menu-button'
@@ -117,886 +118,1146 @@
         </div>
         </nav>
     </header>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='javascript.js'></script>
-    <header>
-        <section class='home' id='home'>
-            <div class=home__content>
-                <h1 class='home__title'>
-				<span class='home__title__blue'>Smiley</span> creative multi-purpose
-			</h1>
-                <p class='home__description'>
-                    Primis vocent comprehensam an vix, qui ferri alterum appareat id.
-                </p>
-                <a href='#services' class='home__link'>
-				Learn more
-				<svg xmlns='http://www.w3.org/2000/svg' class='home__icon' width='24' height='24' viewBox='0 0 24 24'><path d='M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z'/></svg>
-			</a>
-            </div>
-        </section>
-        <section class='services' id='services'>
-            <div class='services__container'>
-                <div class='services__color darker'></div>
-                <ul class='services__list'>
-                    <li class='services__item darker'>
-                        <img src='images/animation.png' class='services__item__icon'>
-                        <h2 class='services__item__title'>
-						2D and 3D animation
-					</h2>
-                    </li>
-                    <li class='services__item brighter'>
-                        <img src='images/identity.png' class='services__item__icon'>
-                        <h2 class='services__item__title'>
-						Company brand identity
-					</h2>
-                    </li>
-                    <li class='services__item darker'>
-                        <img src='images/responsive.png' class='services__item__icon'>
-                        <h2 class='services__item__title'>
-						Responsive web design
-					</h2>
-                    </li>
-                    <li class='services__item brighter'>
-                        <img src='images/web.png' class='services__item__icon'>
-                        <h2 class='services__item__title'>
-						Web development
-					</h2>
-                    </li>
-                    <li class='services__item darker'>
-                        <img src='images/app.png' class='services__item__icon'>
-                        <h2 class='services__item__title'>
-						App development
-					</h2>
-                    </li>
-                    <li class='services__item brighter'>
-                        <img src='images/photo.png' class='services__item__icon'>
-                        <h2 class='services__item__title'>
-						Photo &amp; videography
-					</h2>
-                    </li>
-                </ul>
-                <div class='services__color brighter'></div>
-            </div>
-        </section>
-        <section class='about' id='about'>
-            <ul class='about__list'>
-                <li class='about__item writing'>
-                    <h2 class='about__item__title'>
-					Creative writing
-				</h2>
-                    <p class='about__item__description'>
-                        qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
-                        cum. No quidam ocurreret repudiandae vel.
-                    </p>
-                </li>
-                <li class='about__item print'>
-                    <h2 class='about__item__title'>
-					Print design
-				</h2>
-                    <p class='about__item__description'>
-                        qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
-                        cum. No quidam ocurreret repudiandae vel.
-                    </p>
-                </li>
-                <li class='about__item media'>
-                    <h2 class='about__item__title'>
-					Social media
-				</h2>
-                    <p class='about__item__description'>
-                        qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
-                        cum. No quidam ocurreret repudiandae vel.
-                    </p>
-                </li>
-                <li class='about__item web'>
-                    <h2 class='about__item__title'>
-					Pixel perfect web
-				</h2>
-                    <p class='about__item__description'>
-                        qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
-                        cum. No quidam ocurreret repudiandae vel.
-                    </p>
-                </li>
-                <li class='about__item frontend'>
-                    <h2 class='about__item__title'>
-					Front end development
-				</h2>
-                    <p class='about__item__description'>
-                        qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
-                        cum. No quidam ocurreret repudiandae vel.
-                    </p>
-                </li>
-                <li class='about__item design'>
-                    <h2 class='about__item__title'>
-					Graphic design
-				</h2>
-                    <p class='about__item__description'>
-                        qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
-                        cum. No quidam ocurreret repudiandae vel.
-                    </p>
-                </li>
-                <li class='about__item audio'>
-                    <h2 class='about__item__title'>
-					Audio and video
-				</h2>
-                    <p class='about__item__description'>
-                        qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
-                        cum. No quidam ocurreret repudiandae vel.
-                    </p>
-                </li>
-                <li class='about__item speed'>
-                    <h2 class='about__item__title'>
-					Optimized for speed
-				</h2>
-                    <p class='about__item__description'>
-                        qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
-                        cum. No quidam ocurreret repudiandae vel.
-                    </p>
-                </li>
-                <li class='about__item support'>
-                    <h2 class='about__item__title'>
-					24/7 human support
-				</h2>
-                    <p class='about__item__description'>
-                        qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
-                        cum. No quidam ocurreret repudiandae vel.
-                    </p>
-                </li>
-            </ul>
-        </section>
-        <div class='mouse'>
-            <a href='#portfolio' class='mouse__link'>
-                <img src='images/link.png' class='mouse__image'>
+    <section class='home' id='home'>
+        <div class=home__content>
+            <h1 class='home__title'>
+                <span class='home__title__blue'>Smiley</span> creative multi-purpose
+            </h1>
+            <p class='home__description'>
+                Primis vocent comprehensam an vix, qui ferri alterum appareat id.
+            </p>
+            <a href='#services' class='home__link'>
+                Learn more
+                <svg xmlns='http://www.w3.org/2000/svg' class='home__icon' width='24' height='24' viewBox='0 0 24 24'><path d='M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z'/></svg>
             </a>
         </div>
-        <section class='portfolio' id='portfolio'>
-        	<div class='portfolio__content'>
-        		<h2 class='portfolio__title'>
-					Portfolio
-        		</h2>
-        		<p class='portfolio__description'>
-					Lorem ipsum dolor sit amet consecte adip scn elit sit secte 
-        		</p>
-	            <div class='js-tabs'>
-	                <ul class='js-tablist portfolio__list'>
-	                    <li class='js-tablist__item'>
-	                        <a href='#id_first' id='label_id_first' class='js-tablist__link portfolio__list__item'>All</a>
-	                    </li>
-	                    <li class='js-tablist__item'>
-	                        <a href='#id_second' id='label_id_second' class='js-tablist__link portfolio__list__item'>Photography</a>
-	                    </li>
-	                    <li class='js-tablist__item'>
-	                        <a href='#id_third' id='label_id_third' class='js-tablist__link portfolio__list__item'>Brand identity</a>
-	                    </li>
-	                    <li class='js-tablist__item'>
-	                        <a href='#id_fourth' id='label_id_fourth' class='js-tablist__link portfolio__list__item'>UI/UX</a>
-	                    </li>
-	                    <li class='js-tablist__item'>
-	                        <a href='#id_fifth' id='label_id_fifth' class='js-tablist__link portfolio__list__item'>Web development</a>
-	                    </li>
-	                </ul>
-	                <ul id='id_first' class='js-tabcontent portfolio__category' >
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-1.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-2.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-3.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-4.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-5.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-6.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-7.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-8.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-9.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                </ul>
-	                <ul id='id_second' class='js-tabcontent portfolio__category'>
-	                     <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-1.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-2.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-3.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-4.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-5.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-6.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                </ul>
-	                <ul id='id_third' class='js-tabcontent portfolio__category'>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-6.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                     <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-4.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                     <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-5.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-8.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-9.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                </ul>
-	                <ul id='id_fourth' class='js-tabcontent portfolio__category'>
-	                     <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-2.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-3.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-8.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-9.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-4.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-5.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                </ul>
-	                <ul id='id_fifth' class='js-tabcontent portfolio__category'>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-8.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-5.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-9.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                    <li class='portfolio__item'>
-							<img class='portfolio__item__photo' src='images/portfolio-7.jpg'>
-							<div class='portfolio__item__content'>
-								<ul class='portfolio__item__list'>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/see-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-									<li class='portfolio__item__link'>
-										<a href=''>
-											<img src='images/link-icon.png' class='portfolio__item__icon'>
-										</a>
-									</li>
-								</ul>
-								<h3 class='portfolio__item__title'>
-									Web design
-								</h3>
-								<p class='portfolio__item__description'>
-									UI/UX, Photoshop
-								</p>
-							</div>
-	                    </li>
-	                </ul>
-	            </div>
-	        </div>
-        </section>
+    </section>
+    <section class='services' id='services'>
+        <div class='services__container'>
+            <div class='services__color darker'></div>
+            <ul class='services__list'>
+                <li class='services__item darker'>
+                    <img src='images/animation.png' class='services__item__icon'>
+                    <h2 class='services__item__title'>
+                        2D and 3D animation
+                    </h2>
+                </li>
+                <li class='services__item brighter'>
+                    <img src='images/identity.png' class='services__item__icon'>
+                    <h2 class='services__item__title'>
+                        Company brand identity
+                    </h2>
+                </li>
+                <li class='services__item darker'>
+                    <img src='images/responsive.png' class='services__item__icon'>
+                    <h2 class='services__item__title'>
+                        Responsive web design
+                    </h2>
+                </li>
+                <li class='services__item brighter'>
+                    <img src='images/web.png' class='services__item__icon'>
+                    <h2 class='services__item__title'>
+                        Web development
+                    </h2>
+                </li>
+                <li class='services__item darker'>
+                    <img src='images/app.png' class='services__item__icon'>
+                    <h2 class='services__item__title'>
+                        App development
+                    </h2>
+                </li>
+                <li class='services__item brighter'>
+                    <img src='images/photo.png' class='services__item__icon'>
+                    <h2 class='services__item__title'>
+                        Photo &amp; videography
+                    </h2>
+                </li>
+            </ul>
+            <div class='services__color brighter'></div>
+        </div>
+    </section>
+    <section class='about' id='about'>
+        <ul class='about__list'>
+            <li class='about__item writing'>
+                <h2 class='about__item__title'>
+                    Creative writing
+                </h2>
+                <p class='about__item__description'>
+                    qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
+                    cum. No quidam ocurreret repudiandae vel.
+                </p>
+            </li>
+            <li class='about__item print'>
+                <h2 class='about__item__title'>
+                    Print design
+                </h2>
+                <p class='about__item__description'>
+                    qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
+                    cum. No quidam ocurreret repudiandae vel.
+                </p>
+            </li>
+            <li class='about__item media'>
+                <h2 class='about__item__title'>
+                    Social media
+                </h2>
+                <p class='about__item__description'>
+                    qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
+                    cum. No quidam ocurreret repudiandae vel.
+                </p>
+            </li>
+            <li class='about__item web'>
+                <h2 class='about__item__title'>
+                    Pixel perfect web
+                </h2>
+                <p class='about__item__description'>
+                    qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
+                    cum. No quidam ocurreret repudiandae vel.
+                </p>
+            </li>
+            <li class='about__item frontend'>
+                <h2 class='about__item__title'>
+                    Front end development
+                </h2>
+                <p class='about__item__description'>
+                    qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
+                    cum. No quidam ocurreret repudiandae vel.
+                </p>
+            </li>
+            <li class='about__item design'>
+                <h2 class='about__item__title'>
+                    Graphic design
+                </h2>
+                <p class='about__item__description'>
+                    qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
+                    cum. No quidam ocurreret repudiandae vel.
+                </p>
+            </li>
+            <li class='about__item audio'>
+                <h2 class='about__item__title'>
+                    Audio and video
+                </h2>
+                <p class='about__item__description'>
+                    qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
+                    cum. No quidam ocurreret repudiandae vel.
+                </p>
+            </li>
+            <li class='about__item speed'>
+                <h2 class='about__item__title'>
+                    Optimized for speed
+                </h2>
+                <p class='about__item__description'>
+                    qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
+                    cum. No quidam ocurreret repudiandae vel.
+                </p>
+            </li>
+            <li class='about__item support'>
+                <h2 class='about__item__title'>
+                    24/7 human support
+                </h2>
+                <p class='about__item__description'>
+                    qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similique interpretaris
+                    cum. No quidam ocurreret repudiandae vel.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <div class='mouse'>
+        <a href='#portfolio' class='mouse__link'>
+            <img src='images/link.png' class='mouse__image'>
+        </a>
+    </div>
+    <section class='portfolio' id='portfolio'>
+        <div class='portfolio__content'>
+            <h2 class='portfolio__title'>
+                    Portfolio
+                </h2>
+            <p class='portfolio__description'>
+                Lorem ipsum dolor sit amet consecte adip scn elit sit secte
+            </p>
+            <div class='js-tabs'>
+                <ul class='js-tablist portfolio__list'>
+                    <li class='js-tablist__item'>
+                        <a href='#id_first' id='label_id_first' class='js-tablist__link portfolio__list__item'>All</a>
+                    </li>
+                    <li class='js-tablist__item'>
+                        <a href='#id_second' id='label_id_second' class='js-tablist__link portfolio__list__item'>Photography</a>
+                    </li>
+                    <li class='js-tablist__item'>
+                        <a href='#id_third' id='label_id_third' class='js-tablist__link portfolio__list__item'>Brand identity</a>
+                    </li>
+                    <li class='js-tablist__item'>
+                        <a href='#id_fourth' id='label_id_fourth' class='js-tablist__link portfolio__list__item'>UI/UX</a>
+                    </li>
+                    <li class='js-tablist__item'>
+                        <a href='#id_fifth' id='label_id_fifth' class='js-tablist__link portfolio__list__item'>Web development</a>
+                    </li>
+                </ul>
+                <ul id='id_first' class='js-tabcontent portfolio__category'>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-1.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-2.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-3.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-4.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-5.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-6.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-7.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-8.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-9.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul id='id_second' class='js-tabcontent portfolio__category'>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-1.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-2.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-3.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-4.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-5.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-6.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul id='id_third' class='js-tabcontent portfolio__category'>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-6.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-4.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-5.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-8.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-9.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul id='id_fourth' class='js-tabcontent portfolio__category'>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-2.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-3.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-8.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-9.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-4.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-5.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul id='id_fifth' class='js-tabcontent portfolio__category'>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-8.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-5.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-9.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                    <li class='portfolio__item'>
+                        <img class='portfolio__item__photo' src='images/portfolio-7.jpg'>
+                        <div class='portfolio__item__content'>
+                            <ul class='portfolio__item__list'>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/see-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                                <li class='portfolio__item__link'>
+                                    <a href=''>
+                                        <img src='images/link-icon.png' class='portfolio__item__icon'>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class='portfolio__item__title'>
+                                    Web design
+                                </h3>
+                            <p class='portfolio__item__description'>
+                                UI/UX, Photoshop
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class='portfolio__more'>
+                Learn more &#8594;
+            </button>
+        </div>
+    </section>
+    <section class='team'>
+        <div class='team__text'>
+            <h2 class='team__title'>
+                The team
+            </h2>
+            <p class='team__description'>
+                Lorem ipsum dolor sit amet consecte adip scn elit sit secte
+            </p>
+        </div>
+        <ul class='team__members'>
+            <li class='member__set'>
+                <img class='member__photo' src='images/team-member1.jpg'>
+                <div class='member__text'>
+                    <h3 class='member__name'>
+                        Faridul Haque
+                    </h3>
+                    <h4 class='member__position'>
+                        Graphic designer
+                    </h4>
+                </div>
+                <ul class='member__socials'>
+                        
+                    <li class='member__social'>
+                        <svg viewbox='0 0 24 24' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  class='member__icon'><path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" /></svg>
+                    </li>
+                    <li class='member__social'>
+                        <svg viewbox='0 0 52 52' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class='member__icon'><path d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"/></svg>
+                    </li>
+                    <li class='member__social'>
+                        <svg viewbox='0 0 24 24'  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class='member__icon'><path d="M20.38,8.53C20.54,8.13 21.06,6.54 20.21,4.39C20.21,4.39 18.9,4 15.91,6C14.66,5.67 13.33,5.62 12,5.62C10.68,5.62 9.34,5.67 8.09,6C5.1,3.97 3.79,4.39 3.79,4.39C2.94,6.54 3.46,8.13 3.63,8.53C2.61,9.62 2,11 2,12.72C2,19.16 6.16,20.61 12,20.61C17.79,20.61 22,19.16 22,12.72C22,11 21.39,9.62 20.38,8.53M12,19.38C7.88,19.38 4.53,19.19 4.53,15.19C4.53,14.24 5,13.34 5.8,12.61C7.14,11.38 9.43,12.03 12,12.03C14.59,12.03 16.85,11.38 18.2,12.61C19,13.34 19.5,14.23 19.5,15.19C19.5,19.18 16.13,19.38 12,19.38M8.86,13.12C8.04,13.12 7.36,14.12 7.36,15.34C7.36,16.57 8.04,17.58 8.86,17.58C9.69,17.58 10.36,16.58 10.36,15.34C10.36,14.11 9.69,13.12 8.86,13.12M15.14,13.12C14.31,13.12 13.64,14.11 13.64,15.34C13.64,16.58 14.31,17.58 15.14,17.58C15.96,17.58 16.64,16.58 16.64,15.34C16.64,14.11 16,13.12 15.14,13.12Z" /></svg>
+                    </li>
+                    <li class='member__social'>
+                        <svg viewbox='0 0 24 24'  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class='member__icon'><path d="M19.58,12.27C19.54,11.65 19.33,11.18 18.96,10.86C18.59,10.54 18.13,10.38 17.58,10.38C17,10.38 16.5,10.55 16.19,10.89C15.86,11.23 15.65,11.69 15.57,12.27M21.92,12.04C22,12.45 22,13.04 22,13.81H15.5C15.55,14.71 15.85,15.33 16.44,15.69C16.79,15.92 17.22,16.03 17.73,16.03C18.26,16.03 18.69,15.89 19,15.62C19.2,15.47 19.36,15.27 19.5,15H21.88C21.82,15.54 21.53,16.07 21,16.62C20.22,17.5 19.1,17.92 17.66,17.92C16.47,17.92 15.43,17.55 14.5,16.82C13.62,16.09 13.16,14.9 13.16,13.25C13.16,11.7 13.57,10.5 14.39,9.7C15.21,8.87 16.27,8.46 17.58,8.46C18.35,8.46 19.05,8.6 19.67,8.88C20.29,9.16 20.81,9.59 21.21,10.2C21.58,10.73 21.81,11.34 21.92,12.04M9.58,14.07C9.58,13.42 9.31,12.97 8.79,12.73C8.5,12.6 8.08,12.53 7.54,12.5H4.87V15.84H7.5C8.04,15.84 8.46,15.77 8.76,15.62C9.31,15.35 9.58,14.83 9.58,14.07M4.87,10.46H7.5C8.04,10.46 8.5,10.36 8.82,10.15C9.16,9.95 9.32,9.58 9.32,9.06C9.32,8.5 9.1,8.1 8.66,7.91C8.27,7.78 7.78,7.72 7.19,7.72H4.87M11.72,12.42C12.04,12.92 12.2,13.53 12.2,14.24C12.2,15 12,15.64 11.65,16.23C11.41,16.62 11.12,16.94 10.77,17.21C10.37,17.5 9.9,17.72 9.36,17.83C8.82,17.94 8.24,18 7.61,18H2V5.55H8C9.53,5.58 10.6,6 11.23,6.88C11.61,7.41 11.8,8.04 11.8,8.78C11.8,9.54 11.61,10.15 11.23,10.61C11,10.87 10.7,11.11 10.28,11.32C10.91,11.55 11.39,11.92 11.72,12.42M20.06,7.32H15.05V6.07H20.06V7.32Z" /></svg>
+                    </li>
+                    <li class='member__social'>
+                        <svg viewbox='0 0 52 52' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class='member__icon'><path d="M30.374,4.622c-13.586,0-20.437,9.74-20.437,17.864c0,4.918,1.862,9.293,5.855,10.922c0.655,0.27,1.242,0.01,1.432-0.715  c0.132-0.5,0.445-1.766,0.584-2.295c0.191-0.717,0.117-0.967-0.412-1.594c-1.151-1.357-1.888-3.115-1.888-5.607  c0-7.226,5.407-13.695,14.079-13.695c7.679,0,11.898,4.692,11.898,10.957c0,8.246-3.649,15.205-9.065,15.205  c-2.992,0-5.23-2.473-4.514-5.508c0.859-3.623,2.524-7.531,2.524-10.148c0-2.34-1.257-4.292-3.856-4.292  c-3.058,0-5.515,3.164-5.515,7.401c0,2.699,0.912,4.525,0.912,4.525s-3.129,13.26-3.678,15.582  c-1.092,4.625-0.164,10.293-0.085,10.865c0.046,0.34,0.482,0.422,0.68,0.166c0.281-0.369,3.925-4.865,5.162-9.359  c0.351-1.271,2.011-7.859,2.011-7.859c0.994,1.896,3.898,3.562,6.986,3.562c9.191,0,15.428-8.379,15.428-19.595  C48.476,12.521,41.292,4.622,30.374,4.622z"/></svg>
+                    </li>
+                </ul>
+            </li>
+            <li class='member__set'>
+                <img class='member__photo' src='images/team-member2.jpg'>
+                <div class='member__text'>
+                    <h3 class='member__name'>
+                        Angelina Fuad Jolie
+                    </h3>
+                    <h4 class='member__position'>
+                        Fasion Designer
+                    </h4>
+                </div>
+                <ul class='member__socials'>
+                        
+                    <li class='member__social'>
+                        <svg viewbox='0 0 24 24' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  class='member__icon'><path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" /></svg>
+                    </li>
+                    <li class='member__social'>
+                        <svg viewbox='0 0 52 52' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class='member__icon'><path d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"/></svg>
+                    </li>
+                    <li class='member__social'>
+                        <svg viewbox='0 0 24 24'  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class='member__icon'><path d="M20.38,8.53C20.54,8.13 21.06,6.54 20.21,4.39C20.21,4.39 18.9,4 15.91,6C14.66,5.67 13.33,5.62 12,5.62C10.68,5.62 9.34,5.67 8.09,6C5.1,3.97 3.79,4.39 3.79,4.39C2.94,6.54 3.46,8.13 3.63,8.53C2.61,9.62 2,11 2,12.72C2,19.16 6.16,20.61 12,20.61C17.79,20.61 22,19.16 22,12.72C22,11 21.39,9.62 20.38,8.53M12,19.38C7.88,19.38 4.53,19.19 4.53,15.19C4.53,14.24 5,13.34 5.8,12.61C7.14,11.38 9.43,12.03 12,12.03C14.59,12.03 16.85,11.38 18.2,12.61C19,13.34 19.5,14.23 19.5,15.19C19.5,19.18 16.13,19.38 12,19.38M8.86,13.12C8.04,13.12 7.36,14.12 7.36,15.34C7.36,16.57 8.04,17.58 8.86,17.58C9.69,17.58 10.36,16.58 10.36,15.34C10.36,14.11 9.69,13.12 8.86,13.12M15.14,13.12C14.31,13.12 13.64,14.11 13.64,15.34C13.64,16.58 14.31,17.58 15.14,17.58C15.96,17.58 16.64,16.58 16.64,15.34C16.64,14.11 16,13.12 15.14,13.12Z" /></svg>
+                    </li>
+                    <li class='member__social'>
+                        <svg viewbox='0 0 24 24'  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class='member__icon'><path d="M19.58,12.27C19.54,11.65 19.33,11.18 18.96,10.86C18.59,10.54 18.13,10.38 17.58,10.38C17,10.38 16.5,10.55 16.19,10.89C15.86,11.23 15.65,11.69 15.57,12.27M21.92,12.04C22,12.45 22,13.04 22,13.81H15.5C15.55,14.71 15.85,15.33 16.44,15.69C16.79,15.92 17.22,16.03 17.73,16.03C18.26,16.03 18.69,15.89 19,15.62C19.2,15.47 19.36,15.27 19.5,15H21.88C21.82,15.54 21.53,16.07 21,16.62C20.22,17.5 19.1,17.92 17.66,17.92C16.47,17.92 15.43,17.55 14.5,16.82C13.62,16.09 13.16,14.9 13.16,13.25C13.16,11.7 13.57,10.5 14.39,9.7C15.21,8.87 16.27,8.46 17.58,8.46C18.35,8.46 19.05,8.6 19.67,8.88C20.29,9.16 20.81,9.59 21.21,10.2C21.58,10.73 21.81,11.34 21.92,12.04M9.58,14.07C9.58,13.42 9.31,12.97 8.79,12.73C8.5,12.6 8.08,12.53 7.54,12.5H4.87V15.84H7.5C8.04,15.84 8.46,15.77 8.76,15.62C9.31,15.35 9.58,14.83 9.58,14.07M4.87,10.46H7.5C8.04,10.46 8.5,10.36 8.82,10.15C9.16,9.95 9.32,9.58 9.32,9.06C9.32,8.5 9.1,8.1 8.66,7.91C8.27,7.78 7.78,7.72 7.19,7.72H4.87M11.72,12.42C12.04,12.92 12.2,13.53 12.2,14.24C12.2,15 12,15.64 11.65,16.23C11.41,16.62 11.12,16.94 10.77,17.21C10.37,17.5 9.9,17.72 9.36,17.83C8.82,17.94 8.24,18 7.61,18H2V5.55H8C9.53,5.58 10.6,6 11.23,6.88C11.61,7.41 11.8,8.04 11.8,8.78C11.8,9.54 11.61,10.15 11.23,10.61C11,10.87 10.7,11.11 10.28,11.32C10.91,11.55 11.39,11.92 11.72,12.42M20.06,7.32H15.05V6.07H20.06V7.32Z" /></svg>
+                    </li>
+                    <li class='member__social'>
+                        <svg viewbox='0 0 52 52' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class='member__icon'><path d="M30.374,4.622c-13.586,0-20.437,9.74-20.437,17.864c0,4.918,1.862,9.293,5.855,10.922c0.655,0.27,1.242,0.01,1.432-0.715  c0.132-0.5,0.445-1.766,0.584-2.295c0.191-0.717,0.117-0.967-0.412-1.594c-1.151-1.357-1.888-3.115-1.888-5.607  c0-7.226,5.407-13.695,14.079-13.695c7.679,0,11.898,4.692,11.898,10.957c0,8.246-3.649,15.205-9.065,15.205  c-2.992,0-5.23-2.473-4.514-5.508c0.859-3.623,2.524-7.531,2.524-10.148c0-2.34-1.257-4.292-3.856-4.292  c-3.058,0-5.515,3.164-5.515,7.401c0,2.699,0.912,4.525,0.912,4.525s-3.129,13.26-3.678,15.582  c-1.092,4.625-0.164,10.293-0.085,10.865c0.046,0.34,0.482,0.422,0.68,0.166c0.281-0.369,3.925-4.865,5.162-9.359  c0.351-1.271,2.011-7.859,2.011-7.859c0.994,1.896,3.898,3.562,6.986,3.562c9.191,0,15.428-8.379,15.428-19.595  C48.476,12.521,41.292,4.622,30.374,4.622z"/></svg>
+                    </li>
+                </ul>
+            </li>
+            <li class='member__set'>
+                <img class='member__photo' src='images/team-member3.jpg'>
+                <div class='member__text'>
+                    <h3 class='member__name'>
+                        Farhan Al fuad
+                    </h3>
+                    <h4 class='member__position'>
+                        UI/UX Designer
+                    </h4>
+                </div>
+                <ul class='member__socials'>
+                        
+                    <li class='member__social'>
+                        <svg viewbox='0 0 24 24' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  class='member__icon'><path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" /></svg>
+                    </li>
+                    <li class='member__social'>
+                        <svg viewbox='0 0 52 52' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class='member__icon'><path d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"/></svg>
+                    </li>
+                    <li class='member__social'>
+                        <svg viewbox='0 0 24 24'  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class='member__icon'><path d="M20.38,8.53C20.54,8.13 21.06,6.54 20.21,4.39C20.21,4.39 18.9,4 15.91,6C14.66,5.67 13.33,5.62 12,5.62C10.68,5.62 9.34,5.67 8.09,6C5.1,3.97 3.79,4.39 3.79,4.39C2.94,6.54 3.46,8.13 3.63,8.53C2.61,9.62 2,11 2,12.72C2,19.16 6.16,20.61 12,20.61C17.79,20.61 22,19.16 22,12.72C22,11 21.39,9.62 20.38,8.53M12,19.38C7.88,19.38 4.53,19.19 4.53,15.19C4.53,14.24 5,13.34 5.8,12.61C7.14,11.38 9.43,12.03 12,12.03C14.59,12.03 16.85,11.38 18.2,12.61C19,13.34 19.5,14.23 19.5,15.19C19.5,19.18 16.13,19.38 12,19.38M8.86,13.12C8.04,13.12 7.36,14.12 7.36,15.34C7.36,16.57 8.04,17.58 8.86,17.58C9.69,17.58 10.36,16.58 10.36,15.34C10.36,14.11 9.69,13.12 8.86,13.12M15.14,13.12C14.31,13.12 13.64,14.11 13.64,15.34C13.64,16.58 14.31,17.58 15.14,17.58C15.96,17.58 16.64,16.58 16.64,15.34C16.64,14.11 16,13.12 15.14,13.12Z" /></svg>
+                    </li>
+                    <li class='member__social'>
+                        <svg viewbox='0 0 24 24'  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class='member__icon'><path d="M19.58,12.27C19.54,11.65 19.33,11.18 18.96,10.86C18.59,10.54 18.13,10.38 17.58,10.38C17,10.38 16.5,10.55 16.19,10.89C15.86,11.23 15.65,11.69 15.57,12.27M21.92,12.04C22,12.45 22,13.04 22,13.81H15.5C15.55,14.71 15.85,15.33 16.44,15.69C16.79,15.92 17.22,16.03 17.73,16.03C18.26,16.03 18.69,15.89 19,15.62C19.2,15.47 19.36,15.27 19.5,15H21.88C21.82,15.54 21.53,16.07 21,16.62C20.22,17.5 19.1,17.92 17.66,17.92C16.47,17.92 15.43,17.55 14.5,16.82C13.62,16.09 13.16,14.9 13.16,13.25C13.16,11.7 13.57,10.5 14.39,9.7C15.21,8.87 16.27,8.46 17.58,8.46C18.35,8.46 19.05,8.6 19.67,8.88C20.29,9.16 20.81,9.59 21.21,10.2C21.58,10.73 21.81,11.34 21.92,12.04M9.58,14.07C9.58,13.42 9.31,12.97 8.79,12.73C8.5,12.6 8.08,12.53 7.54,12.5H4.87V15.84H7.5C8.04,15.84 8.46,15.77 8.76,15.62C9.31,15.35 9.58,14.83 9.58,14.07M4.87,10.46H7.5C8.04,10.46 8.5,10.36 8.82,10.15C9.16,9.95 9.32,9.58 9.32,9.06C9.32,8.5 9.1,8.1 8.66,7.91C8.27,7.78 7.78,7.72 7.19,7.72H4.87M11.72,12.42C12.04,12.92 12.2,13.53 12.2,14.24C12.2,15 12,15.64 11.65,16.23C11.41,16.62 11.12,16.94 10.77,17.21C10.37,17.5 9.9,17.72 9.36,17.83C8.82,17.94 8.24,18 7.61,18H2V5.55H8C9.53,5.58 10.6,6 11.23,6.88C11.61,7.41 11.8,8.04 11.8,8.78C11.8,9.54 11.61,10.15 11.23,10.61C11,10.87 10.7,11.11 10.28,11.32C10.91,11.55 11.39,11.92 11.72,12.42M20.06,7.32H15.05V6.07H20.06V7.32Z" /></svg>
+                    </li>
+                    <li class='member__social'>
+                        <svg viewbox='0 0 52 52' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class='member__icon'><path d="M30.374,4.622c-13.586,0-20.437,9.74-20.437,17.864c0,4.918,1.862,9.293,5.855,10.922c0.655,0.27,1.242,0.01,1.432-0.715  c0.132-0.5,0.445-1.766,0.584-2.295c0.191-0.717,0.117-0.967-0.412-1.594c-1.151-1.357-1.888-3.115-1.888-5.607  c0-7.226,5.407-13.695,14.079-13.695c7.679,0,11.898,4.692,11.898,10.957c0,8.246-3.649,15.205-9.065,15.205  c-2.992,0-5.23-2.473-4.514-5.508c0.859-3.623,2.524-7.531,2.524-10.148c0-2.34-1.257-4.292-3.856-4.292  c-3.058,0-5.515,3.164-5.515,7.401c0,2.699,0.912,4.525,0.912,4.525s-3.129,13.26-3.678,15.582  c-1.092,4.625-0.164,10.293-0.085,10.865c0.046,0.34,0.482,0.422,0.68,0.166c0.281-0.369,3.925-4.865,5.162-9.359  c0.351-1.271,2.011-7.859,2.011-7.859c0.994,1.896,3.898,3.562,6.986,3.562c9.191,0,15.428-8.379,15.428-19.595  C48.476,12.521,41.292,4.622,30.374,4.622z"/></svg>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </section>
+    <section class='stats'>
+        <div class='stats__set'>
+            <div class='stats__info'>
+                <svg class='stats__icon' viewbox='0 0 50 50' xmlns="http://www.w3.org/2000/svg"><path d="M37.84 12.02c-.41-1.18-1.53-2.02-2.84-2.02h-22c-1.31 0-2.43.84-2.84 2.02l-4.16 11.98v16c0 1.1.9 2 2 2h2c1.11 0 2-.9 2-2v-2h24v2c0 1.1.9 2 2 2h2c1.11 0 2-.9 2-2v-16l-4.16-11.98zm-24.84 19.98c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm22 0c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm-25-10l3-9h22l3 9h-28z"/><path d="M0 0h48v48h-48z" fill="none"/></svg>
+                <p class='stats__number'>
+                    518
+                </p>
+            </div>
+            <h2='stats__title'>
+                Projects delivered
+            </h2>
+        </div>
+        <div class='stats__set'>
+            <div class='stats__info'>
+                <svg class='stats__icon' enable-background="new 0 0 147 147" height="147px" viewBox="0 0 147 147" width="147px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M73.75,0.5C33.295,0.5,0.5,33.295,0.5,73.75S33.295,147,73.75,147S147,114.205,147,73.75  S114.205,0.5,73.75,0.5z M11.5,73.75c0-21.72,11.189-40.866,28.098-52.007l-1.683,5.183L49.2,27.679l-3.386,14.563l8.625,20.608  l18.929,12.883l3.446,5.152l8.602,0.857l-3.438,12.035l12.896,13.756l-2.577,6.878L88,124.728v9.607  C83.42,135.412,78.654,136,73.75,136C39.425,136,11.5,108.074,11.5,73.75z M93.107,132.902l1.447-7.314l20.796-15.477l10.398-18.915  l-4.259-5.159l-7.718,0.859l-1.71-4.299l-10.313-3.659L91.438,77H81.12l-6.878-11.173l-12.038-4.511l4.299-1.827l8.598-3.492  l5.158,4.273l12.897-25.808L79.4,26.718l-0.859,8.595l-7.739-7.739l4.3-5.16l-20.681-7.826C60.51,12.593,67.003,11.5,73.75,11.5  c34.324,0,62.25,27.925,62.25,62.25C136,101.317,117.98,124.742,93.107,132.902z"/></svg>
+                <p class='stats__number'>
+                    177
+                </p>
+            </div>
+            <h2='stats__title'>
+                Web Design Projects
+            </h2>
+        </div>
+        <div class='stats__set'>
+            <div class='stats__info'>
+                <svg class='stats__icon' viewbox='0 0 142 142' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g ><path d="M113.326,70.191c0-2.97-2.377-5.376-5.307-5.376H75.543V32.387v-0.001c0-2.98-2.418-5.397-5.396-5.397   c-2.98,0-5.398,2.417-5.398,5.397V70.17c0,2.981,2.418,5.398,5.398,5.398h37.875C110.949,75.568,113.326,73.161,113.326,70.191    M129.533,70.157c0,32.798-26.584,59.386-59.375,59.386c-32.793,0-59.375-26.588-59.375-59.386s26.582-59.386,59.375-59.386   C102.949,10.771,129.533,37.359,129.533,70.157 M140.314,70.157C140.314,31.41,108.904,0,70.158,0C31.41,0,0,31.41,0,70.157   s31.41,70.157,70.158,70.157C108.904,140.314,140.314,108.904,140.314,70.157"/></g><g/></svg>
+                <p class='stats__number'>
+                    2465
+                </p>
+            </div>
+            <h2='stats__title'>
+                Total hours
+            </h2>
+        </div>
+        <div class='stats__set'>
+            <div class='stats__info'>
+                <svg class='stats__icon' viewbox='0 0 64 64' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M49.109,13.836H34.903v0.005H10.964v9.216c0,9.909,8.032,17.941,17.941,17.941c7.284,0,13.541-4.349,16.352-10.585h3.853   c4.57,0,8.289-3.718,8.289-8.289S53.68,13.836,49.109,13.836z M49.109,26.051h-2.533c0.164-0.976,0.27-1.971,0.27-2.994v-4.859   h2.263c2.165,0,3.926,1.761,3.926,3.926S51.274,26.051,49.109,26.051z"/><path d="M10.055,48.675c0.502,0.823,1.69,1.49,2.654,1.49h32.392c0.964,0,2.152-0.667,2.654-1.49l3.454-5.659H6.602L10.055,48.675z   "/></g></svg>
+                <p class='stats__number'>
+                    2465
+                </p>
+            </div>
+            <h2='stats__title'>
+                Cup of Coffee
+            </h2>
+        </div>
+    </section>
+    <section class='pricing'>
+        <div class='pricing__text'>
+            <h2 class='pricing__title'>
+                Pricing table
+            </h2>
+            <p class='pricing__description'>
+                Lorem ipsum dolor sit amet consecte adip scn elit sit secte  
+            </p>
+        </div>
+        <ul class='pricing__options'>
+            <li class='pricing__option'>
+                <div class='option__info'>
+                    <h3 class='option__title'>
+                        Basic
+                    </h3>
+                    <p class='option__description'>
+                        Suitable for Large Company
+                    </p>
+                    <p class='option__price'>
+                        $1099/<span class='option__price__month'>Month</span>
+                    </p>
+                </div>
+                <ul class='option__features'>
+                    <li class='option__feature'>
+                        2 unique concepts
+                    </li>
+                    <li class='option__feature'>
+                        5 revisions
+                    </li>
+                    <li class='option__feature'>
+                        Logo design
+                    </li>
+                    <li class='option__feature'>
+                        24/7 customer support
+                    </li>
+                    <li class='option__feature'>
+                        3-5 business days
+                    </li>
+                </ul>
+                <button class='option__order'>
+                    Order
+                </button>
+            </li>
+            <li class='pricing__option'>
+                <div class='option__info'>
+                    <h3 class='option__title'>
+                        Standard
+                    </h3>
+                    <p class='option__description'>
+                        Suitable for Large Company
+                    </p>
+                    <p class='option__price'>
+                        $1499/<span class='option__price__month'>Month</span>
+                    </p>
+                </div>
+                <ul class='option__features'>
+                    <li class='option__feature'>
+                        2 unique concepts
+                    </li>
+                    <li class='option__feature'>
+                        5 revisions
+                    </li>
+                    <li class='option__feature'>
+                        Logo design
+                    </li>
+                    <li class='option__feature'>
+                        24/7 customer support
+                    </li>
+                    <li class='option__feature'>
+                        3-5 business days
+                    </li>
+                </ul>
+                <button class='option__order'>
+                    Order
+                </button>
+            </li>
+            <li class='pricing__option'>
+                <div class='option__info'>
+                    <h3 class='option__title'>
+                        Professional
+                    </h3>
+                    <p class='option__description'>
+                        Suitable for Large Company
+                    </p>
+                    <p class='option__price'>
+                        $2099/<span class='option__price__month'>Month</span>
+                    </p>
+                </div>
+                <ul class='option__features'>
+                    <li class='option__feature'>
+                        2 unique concepts
+                    </li>
+                    <li class='option__feature'>
+                        5 revisions
+                    </li>
+                    <li class='option__feature'>
+                        Logo design
+                    </li>
+                    <li class='option__feature'>
+                        24/7 customer support
+                    </li>
+                    <li class='option__feature'>
+                        3-5 business days
+                    </li>
+                </ul>
+                <button class='option__order'>
+                    Order
+                </button>
+            </li>
+        </ul>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='javascript.js'></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 
 </html>
